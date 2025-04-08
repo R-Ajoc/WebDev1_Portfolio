@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSSF</title>
+	<link rel="stylesheet" href="CSSFstyle.css">
+</head>
+<body>
+	<h2>Customer Satisfaction Survey Form</h2>
+	<div class="container">
+    <form>
+        <label for="reason">1) Why did you contact customer service?</label><br>
+        <textarea id="reason" name="reason" rows="10" cols="100"></textarea><br><br>
+        
+        <label>2) What method did you use to contact customer service?</label><br>
+        <input type="radio" name="method" value="telephone"> Telephone
+        <input type="radio" name="method" value="mail"> Mail
+        <input type="radio" name="method" value="email"> E-mail
+        <input type="radio" name="method" value="fax"> Fax 
+        <input type="radio" name="method" value="other"> Other <br>
+        <textarea id="other" name="other" rows="1" cols="50"></textarea><br><br>
+        
+        
+        <label>3) How satisfied are you with the time it took customer service to answer your question or resolve your issue?</label><br>
+        <input type="radio" name="satisfaction" value="very_dissatisfied"> Very Dissatisfied
+        <input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied
+        <input type="radio" name="satisfaction" value="undecided"> Undecided
+        <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+        <input type="radio" name="satisfaction" value="very_satisfied"> Very Satisfied<br><br>
+
+        <h3>Please tell us how much you agree or disagree with the following statements.</h3>
+        
+        <label>4) The customer service representative was knowledgeable and easy to understand.</label><br>
+        <input type="radio" name="knowledge" value="strongly_disagree"> Strongly Disagree
+        <input type="radio" name="knowledge" value="disagree"> Disagree
+        <input type="radio" name="knowledge" value="undecided"> Undecided
+        <input type="radio" name="knowledge" value="agree"> Agree
+        <input type="radio" name="knowledge" value="strongly_agree"> Strongly Agree<br><br>
+        
+        <label>5) The customer service representative was able to handle my problem quickly and to my satisfaction.</label><br>
+        <input type="radio" name="handling" value="strongly_disagree"> Strongly Disagree
+        <input type="radio" name="handling" value="disagree"> Disagree
+        <input type="radio" name="handling" value="undecided"> Undecided
+        <input type="radio" name="handling" value="agree"> Agree
+        <input type="radio" name="handling" value="strongly_agree"> Strongly Agree<br><br>
+        
+        <div class="button-container">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+</div>
+
+</body>
+</html>
