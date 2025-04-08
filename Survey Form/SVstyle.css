@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 13px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(130, 106, 251);
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #ffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgb(0,0,0,0.1);
+}
+
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-style: bold;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+}
+
+.input-box p {
+  margin-bottom: 10px;
+}
+
+.input-box div { 
+  display: inline-flex; 
+  align-items: center; 
+  margin-right: 30px;  
+}
+
+.input-box label {
+  margin-right: 15px;
+}
+
+.input-box .checkbox-row {
+  display: flex;          
+  justify-content: flex-start; 
+  margin-bottom: 10px;    
+}
+
+.input-box .checkbox-row div {
+  width: 48%;              
+}
+
+.input-box input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.input-box .checkbox-row:last-child { 
+  margin-bottom: 20px;
+}
+
+.container div > p {
+  margin-bottom: 15px;
+}
+
+table {
+  width: 95%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+table tr:first-child { 
+  height: 30px; 
+}
+
+th {
+  background-color: rgb(130, 106, 251);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ccc; 
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+table td {
+  text-align: center; 
+}
+table td:first-child {
+  text-align: left;
+}
+
+#comments {
+  margin-bottom: 20px;
+}
+
+.section2-heading {
+  margin-bottom: 30px; 
+}
+
+.form-group {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 10px; 
+}
+
+.form-group label {
+  width: 100px;
+  text-align: left;
+  margin-right: 20px; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"] {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 40px;   
+}
+
+.button-container button {
+  background-color: rgb(130, 106, 251);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 95%;
+  height: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+table td input[type="radio"] {
+  margin: 0 20px;
+}
+.button-container button {
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+.checkbox-group label {
+    margin: 5px; 
+}
+
+.section-underline {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: rgb(130, 106, 251);
+}

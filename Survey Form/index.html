@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="SVstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="container">
+    <header>Survey Form</header>
+    <form action="" method="GET">
+      <hr>
+      <h4>Section 1<span class="section-underline"></span></h4>
+      <div class="input-box">
+        <p>1.1 Which of the following services do you use? (Check all that apply)</p>
+        <div class="checkbox-row"> 
+          <div> 
+            <input type="checkbox" name="services" id="service1" value="Service 1"> 
+            <label for="service1">Service 1</label> 
+          </div> 
+          <div> 
+            <input type="checkbox" name="services" id="service2" value="Service 2"> 
+            <label for="service2">Service 2</label> 
+          </div>
+        </div>
+        <div class="checkbox-row">
+          <div>
+            <input type="checkbox" name="services" id="service3" value="Service 3">
+            <label for="service3">Service 3</label>
+          </div>
+          <div>
+            <input type="checkbox" name="services" id="service4" value="Service 4">
+            <label for="service4">Service 4</label>
+          </div>
+        </div>
+        <div class="checkbox-row">
+          <div>
+            <input type="checkbox" name="services" id="other" value="Other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p>1.2 How would you rate our services in terms of:</p>
+        <table>
+          <tr>
+            <th></th>
+            <th>Excellent</th>
+            <th>Very Good</th>
+            <th>Good</th>
+            <th>Fair</th>
+            <th>Poor</th>
+          </tr>
+          <tr>
+            <td>Your Overall Experience:</td>
+            <td><input type="radio" name="experience" value="Excellent"></td>
+            <td><input type="radio" name="experience" value="Very Good"></td>
+            <td><input type="radio" name="experience" value="Good"></td>
+            <td><input type="radio" name="experience" value="Fair"></td>
+            <td><input type="radio" name="experience" value="Poor"></td>
+          </tr>
+          <tr>
+            <td>The Value of our service:</td>
+            <td><input type="radio" name="value" value="Excellent"></td>
+            <td><input type="radio" name="value" value="Very Good"></td>
+            <td><input type="radio" name="value" value="Good"></td>
+            <td><input type="radio" name="value" value="Fair"></td>
+            <td><input type="radio" name="value" value="Poor"></td>
+          </tr>
+          <tr>
+            <td>Promptness of our service:</td>
+            <td><input type="radio" name="promptness" value="Excellent"></td>
+            <td><input type="radio" name="promptness" value="Very Good"></td>
+            <td><input type="radio" name="promptness" value="Good"></td>
+            <td><input type="radio" name="promptness" value="Fair"></td>
+            <td><input type="radio" name="promptness" value="Poor"></td>
+          </tr>
+          <tr>
+            <td>The Courtesy of our staff:</td>
+            <td><input type="radio" name="courtesy" value="Excellent"></td>
+            <td><input type="radio" name="courtesy" value="Very Good"></td>
+            <td><input type="radio" name="courtesy" value="Good"></td>
+            <td><input type="radio" name="courtesy" value="Fair"></td>
+            <td><input type="radio" name="courtesy" value="Poor"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>1.3 Any comments or suggestions</p>
+        <div>
+          <textarea id="comments" name="comments" rows="4" cols="100"></textarea>
+        </div>
+      </div>
+
+      <hr>
+      <h4>Section 2<span class="section-underline"></span></h4>
+      <div class="section2-heading">
+        <p>2.1 How may we reach you? <i>(optional)</i></p>
+      </div>
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="09xx xxx xxxx">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="testfake@gmail.com">
+      </div>
+      <div class="button-container">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
