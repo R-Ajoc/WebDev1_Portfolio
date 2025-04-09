@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Purpose in Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>My Purpose in Life</strong>
+                        <p>
+                            "I am here to live—not merely to exist. To wake up each day with the courage to choose me, 
+                            even when the world tells me not to. To breathe deeply, love fiercely, and chase moments 
+                            that make my heart race. I refuse to live in the shadow of regret. Every step I take is a 
+                            step towards my dreams, a testament to the strength of my spirit. I am not just a survivor; 
+                            I am a warrior, and my purpose is to thrive. Every choice I make will honor the truth that 
+                            life is short, precious, and unpredictable. So I will live like it's my last day—because 
+                            one day, it will be. And when that day comes, I'll know I chose myself, every time."
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
