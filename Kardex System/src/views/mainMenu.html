@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>USPF Hospital Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-cover bg-center flex flex-col" style="background-image: url('../public/images/bg2.png');">
+
+  <a href="homePage.html" class="absolute right-4 top-4 z-20">
+    <img src="../public/images/return-button.svg" class="w-12 h-12 hover:scale-[1.04] cursor-pointer">
+  </a>
+
+  <!-- Overlay -->
+  <div class="absolute top-0 left-0 w-full h-full bg-white/30 z-0"></div>
+
+  <!-- Title -->
+  <div class="flex justify-center pt-16 px-4 z-10 relative">
+    <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold font-serif text-[#154161] text-center">
+      Welcome, USPF Hospital!
+    </h1>
+  </div>
+
+  <!-- Cards Section (fills the rest of the screen) -->
+  <div class="flex items-center justify-center flex-grow px-4 z-10 relative">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 md:gap-20 mt-12">
+
+      <!-- New Nurse -->
+      <div class="bg-white rounded-2xl shadow-md p-6 w-72 h-72 flex flex-col items-center justify-between border-2 border-blue-400 transform hover:scale-105 transition duration-300 ease-in-out">
+        <div class="w-32 h-32 border-2 rounded-full mb-2 flex items-center justify-center">
+          <img src="../public/images/new-nurse-icon.png" alt="New Nurse">
+        </div>
+        <a href="./register.php">
+          <button class="bg-[#5EACDE] cursor-pointer hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold">New Nurse</button>
+        </a>
+      </div>
+
+      <!-- Endorsement -->
+      <div class="bg-white rounded-2xl shadow-md p-6 w-72 h-72 flex flex-col items-center justify-between border-2 border-blue-400 transform hover:scale-105 transition duration-300 ease-in-out">
+        <div class="w-36 h-36 border-2 rounded-full mb-2 flex items-center justify-center">
+          <img src="../public/images/endorsement-icon.png" alt="Endorsement">
+        </div>
+        <a href="./login.php">
+          <button class="bg-[#5EACDE] cursor-pointer hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold">Endorsement</button>
+        </a>
+      </div>
+
+      <!-- Contact Support -->
+      <div class="bg-white rounded-2xl shadow-md p-6 w-72 h-72 flex flex-col items-center justify-between border-2 border-blue-400 transform hover:scale-105 transition duration-300 ease-in-out">
+        <div class="border-2 w-32 h-32 rounded-full mb-2 flex items-center justify-center">
+          <img src="../public/images/contact-support-icon.png" alt="Contact Support">
+        </div>
+        <a href="./contactSupport.html"><button class="bg-[#5EACDE] cursor-pointer hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold">Contact Support</button></a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
